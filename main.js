@@ -2,7 +2,7 @@ const navMenuEmail = document.querySelector(".navbar-email");
 const desktopMenu = document.querySelector(".desktop-menu");
 const menuBurger = document.querySelector(".menu-burger");
 const mobileMenu = document.querySelector(".mobile-menu");
-const asideShoppingCar = document.querySelector(".product-detail");
+const shoppingCartContainer = document.querySelector("#shoppingCartContainer");
 const shoppingCarIcon = document.querySelector(".navbar-shopping-cart");
 const cardsContainer = document.querySelector(".cards-container")
 
@@ -10,11 +10,11 @@ const cardsContainer = document.querySelector(".cards-container")
 navMenuEmail.addEventListener("click", toggleEmailDesktopMenu);
 menuBurger.addEventListener("click", toggleMobileMenu);
 function toggleEmailDesktopMenu(){
-    asideShoppingCar.classList.add("inactive");
+    shoppingCartContainer.classList.add("inactive");
     desktopMenu.classList.toggle("inactive");
 }
 function toggleMobileMenu(){
-    asideShoppingCar.classList.add("inactive");
+    shoppingCartContainer.classList.add("inactive");
     mobileMenu.classList.toggle("inactive");
 }
 
@@ -23,7 +23,7 @@ shoppingCarIcon.addEventListener("click",toggleShoppingCarAside)
 function toggleShoppingCarAside(){
     mobileMenu.classList.add("inactive");
     desktopMenu.classList.add("inactive");
-    asideShoppingCar.classList.toggle("inactive");
+    shoppingCartContainer.classList.toggle("inactive");
 }
 
     //Product list
