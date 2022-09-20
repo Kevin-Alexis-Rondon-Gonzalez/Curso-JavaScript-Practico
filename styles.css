@@ -242,6 +242,7 @@ nav {
     padding-bottom: 24px;
     position: absolute;
     right: 0;
+    background-color: var(--white);
 }
 .product-detail-close {
     background: var(--white);
@@ -317,6 +318,7 @@ nav {
     height: 240px;
     border-radius: 20px;
     object-fit: cover;
+    cursor: pointer;
 }
 .product-card .product-info {
     display: flex;
@@ -370,9 +372,8 @@ nav {
         width: 140px;
         height: 140px;
     }
-    #product-detail {
+    #productDetail {
         width: 100%;
-        
     }
 }
 @media (min-width: 641px){
